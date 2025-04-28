@@ -28,6 +28,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
+      overflow: auto;
     }
 
     .image-profile{
@@ -39,7 +40,6 @@
       background-color: #ffffff;
       background-image: url('imgprofile.jpg');
       background-size: cover;
-      
     }
     
     .introduction{
@@ -67,153 +67,90 @@
       bottom: 50px;
     }
 
-
-
-
-
-    
-    .alllinks{
-      gap: 10px;
-      font-family: 'CreatoDisplay';
-      font-size: 18px;
-      position: absolute;
-      bottom: 2%;
-      left: 110px;
-    }
-    .email{
-      width: 50px;
-      height: 50px;
-      background-image: url('Email.png');
-      background-size: cover;
-    }
-    .github{
-      width: 50px;
-      height: 50px;
-      background-image: url('GitHub.png');
-      background-size: cover;
-    }
-    .instagran{
-      width: 50px;
-      height: 50px;
-      background-image: url('instagran.png');
-      background-size: cover;
-    }
-    .link{
+    .skills{
+      width: 20vh;
+      height: 40vh;
       display: flex;
-      gap: 5px;
-      align-items: center;
     }
-    .habilidades{
-      color: #a12937;
-      position: absolute;
-      left: 20px;
-      top: 200px;
-      width: 200px;
-      height: 300px;
-      font-family: 'wallyoz';
-      font-size: 80px;
-      word-wrap: break-word;
-    }
+
     .languages{
-      color: #a12937;
-      font-family: 'CreatoDisplay';
-      font-size: 20px;
-      position: absolute;
-      top: 230px;
-      left: 250px;
-      width: 320px;
-      height: 250px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-    .icongeral{
+      width: 17vh;
+      height: 40vh;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+      padding-top: 10px;
+    }
+
+    .icongeral{
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      right: 0px;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .links{
+      width: 20vh;
+      height: 40vh;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: end;
+      padding-right: 22px;
+      padding-bottom: 10px;
       gap: 10px;
     }
-    .java{
-      width: 70px;
-      height: 70px;
-      background-image: url('java.png');
-      background-size: cover;
-    }
-    .c{
-      width: 70px;
-      height: 70px;
-      background-image: url('C.png');
-      background-size: cover;
-    }
-    .css{
-      width: 70px;
-      height: 70px;
-      background-image: url('CSS.png');
-      background-size: cover;
-    }
-    .html{
-      width: 70px;
-      height: 70px;
-      background-image: url('html.png');
-      background-size: cover;
-    }
-    a{
-      color: #a12937;
-      text-decoration: none;
+
+    .backgroud-skills{
+      background-color: #3b322f; 
+      width: 300px; 
+      height: 300px; 
+      position: absolute; 
+      top: 0px; 
+      right: 0px; 
+      border-bottom-left-radius: 300px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
     }
   </style>
+
 </head>
 <body>
-
-  <div class="image-profile"></div>
-
-  <div class="introduction">
+  <section class="introduction">
     <div class="welcome">
       <h1 style="font-size: 100px;">WELCOME</h1>
     </div>
     <div class="resume">
-      <p> I'm Giovanna Marques, a Computer Engineering graduate with a specific interest in Data Security. I also like games and web development, but I consider it more of a hobby. I've already started developing projects in Java, C and I'm starting projects with HTML, CSS and JavaScript. I'm passionate about technology and discovering every layer of it fascinates me.
+      <p> I'm Giovanna Marques, a Computer Engineering undergraduate with a specific interest in Embedded Systems and Data Security. </p>
+    </div>
+  </section>
+  <div class="backgroud-skills">
+    <section class="skills">
+      <div class="languages">
+        <a href=""><img class="icongeral" src="java.png" alt="java" width="40px" height="40px"></a>
+        <a href=""><img class="icongeral" src="C.png" alt="java" width="40px" height="40px"></a>
+        <a href=""><img class="icongeral" src="html.png" alt="java" width="40px" height="40px"></a>
+        <a href=""><img class="icongeral" src="CSS.png" alt="java" width="40px" height="40px"></a>
+      </div>
+    </section>
   </div>
+  
 
-  <!--<b class="habilidades">HABILIDADES</b>
-  <div class="languages">
-    <div class="icongeral">
-      <div class="java"></div>
-      <b>JAVA</b>
-    </div>
-    <div class="icongeral">
-      <div class="c"></div>
-      <b>C</b>
-    </div>
-    <div class="icongeral">
-      <div class="css"></div>
-      <b>CSS</b>
-    </div>
-    <div class="icongeral">
-      <div class="html"></div>
-      <b>HTML</b>
-    </div>
-    
-  </div>-->
-  <!--<div class="resume">
-    <h2 style="font-family: wallyoz; font-size: 45px; color: #a12937;">Sobre mim</h2>
-    <b><p style="font-family: CreatoDisplay; font-size: 25px; color: #a12937;"></p></b>
-
-
-    <div class="alllinks">
-      <div class="link">
-        <div class="email"></div>
-        <b><a href="mailto:giovanna.marques@alu.ufc.br" target="_blank">E-mail</a></b>
-      </div>
-      <div class="link">
-        <div class="github"></div>
-        <b><a href="https://github.com/MarquesGiovanna" target="_blank">GitHub</a></b>
-      </div>
-      <div class="link">
-        <div class="instagran"></div>
-        <b><a href="https://www.instagram.com/marques_gioh" target="_blank">Instagram</a></b>
-      </div>
-    </div>
-  </div> -->
+  <div style="background-color: #c97d60; width: 200px; height: 200px; position: absolute; bottom: 0px; right: 0px; border-top-left-radius: 200px;">
+    <section class="links">
+      <a href="mailto:giovanna.marques@alu.ufc.br" target="_blank"><img src="Email.png" alt="email" width="40px" height="40px"  ></a>
+      <a href="https://github.com/MarquesGiovanna" target="_blank"><img src="GitHub.png" alt="github" width="40px" height="40px"></a>
+      <a href="https://www.instagram.com/marques_gioh" target="_blank"><img src="instagran.png" alt="instagran" width="40px" height="40px"></a>
+    </section>
+  </div>
   
   
 </body>
